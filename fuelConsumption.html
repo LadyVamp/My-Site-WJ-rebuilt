@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fuel Consumption</title>
+		<meta charset="utf-8">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="fuelConsumption">
+
+				<section>
+					<a href="https://news.yandex.ru/quotes/213/20002.html" target="_blank">График цен на бензин</a>
+				</section>
+				<footer>
+				 			Copyright  &copy; Nadezhda Dyakova 2015 
+				</footer>
+		</div>
+		
+
+		<script type="text/javascript">
+			//Калькулятор расхода топлива
+			do {
+
+			var distant = prompt('Введите расстояние, км: ');
+			if (isNaN(distant)) {alert('Введите число!');}
+
+			var consumption100 =  prompt('Введите расход топлива на 100 км, литров: ');
+			if (isNaN(consumption100)) {alert('Введите число!');}
+
+			var price1litre = prompt('Введите цену 1 литра бензина, руб: ');
+			if (isNaN(price1litre)) {alert('Введите число!');}
+
+			var consumption1km =  consumption100 / 100;
+
+			fullConsumption =  (distant * consumption1km * price1litre).toFixed(2);
+
+			alert ('Стоимость бензина в 1 конец (за ' +  distant + ' км) =  '+ fullConsumption + ' рублей');
+			alert ('Стоимость бензина в оба конца (за ' +  distant*2 + ' км) = '+ fullConsumption*2 + ' рублей');
+
+			} while (prompt('Еще раз? 1 - да, 0 - нет') != '0');
+		</script>
+
+	</body>
+</html>
+
+
+

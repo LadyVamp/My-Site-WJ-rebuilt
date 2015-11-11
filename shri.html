@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My site Web Junior 2015</title>
+		<meta charset="utf-8">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+		<script src="js/jquery-1.11.3.min.js"></script> <!--для кнопки-->
+		<script src="js/scroll.js"></script> <!--для кнопки-->
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<img src="images/ie-govn.jpg">
+		<![endif]-->
+
+		<div class="btn_up">&uarr;</div>
+
+		<div id="wrapper">
+		<header>
+			<img src="images/logo.jpg" width="100" alt="logo">
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="products.html">Продукты</a></li>
+				<li><a href="news.html" >Новости</a></li>
+				<li><a href="contacts.html" >Контакты </a></li>
+				<li><a href="links.html" >Мои проекты </a></li>
+				<li><strong><a href="shri.html" >ШРИ </a></strong></li>
+			</ul>
+		</nav>
+
+		<section>
+				 <h1>Задания для ШРИ</h1>
+					<div class="links">
+						<a href="shri/task1/index.html" target="_blank" class="button">Задание 1</a>
+						<a href="shri/task2/index.html" target="_blank" class="button">Задание 2</a>
+						<a href="shri/task3/index.html" target="_blank" class="button">Задание 3</a>
+					</div>
+
+					<script>
+						function look(type){
+						param=document.getElementById(type);
+						if(param.style.display == "none") param.style.display = "block";
+						else param.style.display = "none"
+						}
+						</script>
+					
+					<a href="https://academy.yandex.ru/events/shri/msk-2015/register/" target="_blank"> Регистрация</a> <br><br>
+
+					<div class="hidden_text">
+						<a href="#" onClick="look('div1'); return false;">Задание 1 (показать/скрыть)</a><br><br>
+						<div id="div1" style="display:none">
+						<strong>Задание №1</strong><br>
+Сверстайте табло аэропорта. На нём должны быть представлены следующие данные: <br>
+<ol>
+<li>тип рейса (вылет/прилёт; например это может быть иконка);</li><br>
+<li>номер рейса;</li><br>
+<li>авиакомпания;</li><br>
+<li>логотип авиакомпании;</li><br>
+<li>тип воздушного судна;</li><br>
+<li>аэропорт назначения;</li><br>
+<li>плановое время вылета или прилёта;</li><br>
+<li>статус рейса (для вылетающих: регистрация, ожидание посадки, посадка закончена, вылетел; для прилетающих: по расписанию, летит, приземлился; для всех:</li> <br>
+<li>задерживается до HH:MM, отменён);</li><br>
+<li>примечание (например, информация о код-шеринге с другими авиакомпаниями).</li><br>
+</ol>
+В качестве источника можно использовать данные онлайн-табло любого аэропорта мира.<br>
+Дизайн оформления выберите на своё усмотрение, при этом необходимо реализовать следующее:<br>
+
+по наведению курсора на определённое место в табло контрастным цветом выделяются соответствующие строка и столбец;<br>
+нечётные строки табло темнее чётных;<br>
+количество отображаемых данных по высоте больше высоты экрана, при прокрутке заголовок таблицы приклеивается к верхней части видимой области окна браузера;<br>
+при изменении ширины экрана браузера в табло автоматически скрываются и/или сокращаются значения наименее важных столбцов (например, при ширине 1000 пикселей вы показываете всю таблицу, при ширине 900 пикселей — убираете название авиакомпании, оставляя только логотип, 800 пикселей — сокращаете название воздушного судна (Boeing 737-800 -> B737) и так далее);<br>
+в дополнение к предыдущему пункту сделайте так, чтобы по клику на соответствующую строчку в выплывающем окне показывались все данные рейса;<br>
+два чекбокса над самим табло: прилёт и вылет, по нажатию показываются только соответствующие рейсы.<br>
+Плюсом будет, если вам удастся реализовать табло без JavaScript.<br>
+
+Результат пришлите в виде двух ссылок: на работающий пример и на исходный код на GitHub.<br><br>
+						</div>	
+					</div>
+
+					<div class="hidden_text">
+						<a href="#" onClick="look('div2'); return false;">Задание 2 (показать/скрыть)</a><br><br>
+						<div id="div2" style="display:none">
+						<strong>Задание №2</strong><br>
+Существует API, которое умеет отвечать по трём URL: /countries, /cities и /populations. Клиентское приложение подсчитывает численность населения в Африке. Запросы друг от друга не зависят. Чтобы браузер пользователя не простаивал, клиентскому приложению важно уметь делать все три запроса одновременно. Реализацией API является функция getData(url, callback), которая принимает строку с URL запроса и функцию обратного вызова. В случае ошибки в callback первым аргументом будет передана строка ошибки, в случае успеха вторым аргументом будет передан ответ API.<br>
+
+Вам досталась реализация клиентского приложения, которое должно решать описанную выше задачу. Но в коде приложения есть ошибки, из-за которых фактический результат работы отличается от ожидаемого. Сам код здесь. https://gist.github.com/verkholantsev/4d14ce053b009dac1225<br>
+
+Как должно быть: приложение выводит в консоль суммарную популяцию в Африке.<br>
+Как на самом деле: приложение не выводит в консоль ничего.<br><br>
+
+Задание<br>
+
+Найдите ошибку в коде приложения, из-за которой реальный результат работы отличается от ожидаемого. Опишите, как эта ошибка могла возникнуть и как её избежать в будущем.<br>
+Добавьте в приложение новую возможность — диалог с пользователем. Приложение спрашивает название страны или города, а затем показывает численность населения. Для диалога можно использовать window.prompt.<br>
+Результат пришлите в виде двух ссылок: на работающий пример и на исходный код на GitHub.<br><br>
+						</div>	
+					</div>
+
+					<div class="hidden_text">
+						<a href="#" onClick="look('div3'); return false;">Задание 3 (показать/скрыть)</a><br><br>
+						<div id="div3" style="display:none">
+						<strong>Задание №3</strong><br>
+Создайте с помощью WebAudio API плеер, который:<br>
+<ol>
+<li>умеет открывать аудиофайлы (поддерживаемых браузером форматов) с локального диска; </li><br>
+<li>поддерживает drag'n'drop;</li><br>
+<li>имеет кнопки play и stop;</li><br>
+<li>выводит название проигрываемого файла;</li><br>
+<li>умеет отображать хотя бы один вариант визуализации (waveform или spectrum);</li><br>
+<li>работает в Яндекс.Браузере, Safari, Chrome, Firefox.</li><br>
+</ol>
+Дополнительно реализуйте возможность:<br>
+<ol>
+<li>выбора настройки эквалайзера (pop, rock, jazz, classic, normal);</li><br>
+<li>вывод названия песни и исполнителя из метаданных аудиофайла.</li><br>
+</ol>
+Результат пришлите в виде двух ссылок: на работающий пример и на исходный код на GitHub.<br><br>
+						</div>	
+					</div>
+		</section>
+		
+		<footer>
+		 			Copyright  &copy; Nadezhda Dyakova 2015 
+		</footer>
+		</div><!--конец wrapper-->
+
+		<!-- Yandex.Metrika informer -->
+		<a href="https://metrika.yandex.ru/stat/?id=31977831&amp;from=informer"
+		target="_blank" rel="nofollow"><img src="//informer.yandex.ru/informer/31977831/3_0_20ACFFFF_008CF0FF_0_pageviews"
+		style="width:88px; height:31px; border:0; float: right;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:31977831,lang:'ru'});return false}catch(e){}"/></a>
+		<!-- /Yandex.Metrika informer -->
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		(function (d, w, c) {
+		    (w[c] = w[c] || []).push(function() {
+		        try {
+		            w.yaCounter31977831 = new Ya.Metrika({id:31977831,
+		                    clickmap:true});
+		        } catch(e) { }
+		    });
+
+		    var n = d.getElementsByTagName("script")[0],
+		        s = d.createElement("script"),
+		        f = function () { n.parentNode.insertBefore(s, n); };
+		    s.type = "text/javascript";
+		    s.async = true;
+		    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		    if (w.opera == "[object Opera]") {
+		        d.addEventListener("DOMContentLoaded", f, false);
+		    } else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="//mc.yandex.ru/watch/31977831" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</body>
+</html>

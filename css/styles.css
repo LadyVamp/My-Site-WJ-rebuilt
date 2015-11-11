@@ -1,0 +1,233 @@
+#wrapper {
+	width: 960px;
+	margin: 0 auto; /*0 - снизу сверху, auto - слева и справа margin одинаковый*/
+}
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'linux_libertineregular';
+    src: url('../fonts/Linux_libertineregular/linlibertine_r.eot');
+    src: url('../fonts/Linux_libertineregular/linlibertine_r.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Linux_libertineregular/linlibertine_r.woff') format('woff'),
+         url('../fonts/Linux_libertineregular/linlibertine_r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	
+	/*font-family: tahoma, sans-serif;*/
+	font-family: MyriadProRegular, sans-serif; 
+	font-size: 12pt;
+	color: black;
+	background-image: url(../images/45degreee_fabric.png);
+}
+
+ a { 
+ 	  font-size: 13pt;
+    font-family: Helvetica, sans-serif;
+    color: #1F3A93;
+   } 
+
+ a:hover { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+
+p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+    font-family: MyriadProRegular;
+   }
+
+
+ .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+
+h1, h2{
+	font-family: linux_libertineregular;
+	text-align: center;
+}
+
+h1 {	
+		font-size: 18pt;
+		color: #3A539B;
+		text-shadow: 2px 2px 0 #ccc;
+}
+
+h2 {
+	font-size: 16pt;
+	color: #3A539B;
+}
+
+h3 {
+	font-size: 12pt;
+	color: #5069B0;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h4 {
+	font-size: 12pt;
+	color: #000000;
+}
+/*Продукты*/
+.grow img { 							/*при наведении мышки на картинку слегка увеличить ее размер*/
+  height: 300px;
+  margin: 10px;
+}
+.grow img:hover {
+   height: 320px;
+}
+
+.image_size {
+	height: 350px;
+}
+
+.products p:first-letter { /*буквица*/
+	font-family: Impact, fantasy;
+      font-size: 150%;
+      color: red;
+    }
+
+
+/*Новости*/
+.indent{ 							
+		text-indent: 1.5em; /* Отступ первой строки */
+}
+
+.leftimg {
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+}
+
+/*body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ul li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}*/
+
+/*div{
+	border: 1px solid black;
+}*/
+
+header { 
+	 height:100px; 
+	}
+
+/*Навигация*/
+nav {
+  background: #336699;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 15%; /* для 6 пунктов меню 15%, для 5 пунктов 17%*/
+  text-align: center;
+  background: #336699;
+  -webkit-transition: 1s background;
+}
+nav a {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  background: #57c8e8;
+}
+
+/*Боковое меню*/
+aside {
+   width: 15%;
+ 	min-height:700px; 
+ 	float: left;
+ 	padding-right: 20px;
+  padding-top: 50px;
+ }
+
+section { 
+ 	min-height: 700px;
+	overflow: hidden;
+	padding-left: 20px;
+	
+ }
+
+/*Подвал*/
+footer {
+	font-style: italic;
+	font-size: 12px;
+	height: 50px;
+	clear: both;
+	text-align: center;
+}
+
+/*Кнопка вверх*/
+.btn_up{
+	background: #000;
+	color: #fff;
+	width: 30px;
+	text-align:center;
+	padding: 5px;
+	font-size: 25px;
+	border-radius: 50%;
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+}
+
+.links {
+	text-align: center;
+}
+
+a.button {
+  display: inline-block;
+  width: 150px;
+  margin: 8px;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #8A93C0 #000 #273E7B;
+  border-radius: 6px;
+  background: linear-gradient(#54ACDA, #3452A0) #132C7E;
+  transition: 0.2s;
+} 
+a.button:hover { background: linear-gradient(#93D4F5, #6B89D8) #E5E6E7; }
+a.button:active { background: linear-gradient(#54ACDA, #3452A0) #132C7E; }
+
+.hidden_text {
+  font-size: 13px;
+  padding: 0 10px 0 10px;
+}
+ ol {
+    list-style-type: circle;
+}
+
+/*fuelConsumption */
+.fuelConsumption {
+      width: 100%; 
+      height: 768px; 
+      background: url(../images/mitsubishi-lancer-evolution.jpg);
+      background-size: cover;
+ }
+ 
+.fuelConsumption a {
+text-decoration: none;
+}
