@@ -1,0 +1,575 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ul li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+
+@font-face {
+font-family: 'MyriadProBold'; /* Имя шрифта */
+src: url(fonts/MyriadProBold.ttf);  /*путь*/
+font-weight:normal;
+font-style:normal;
+}
+ 
+ @font-face {
+font-family: 'MyriadProRegular'; 
+src: url(fonts/MyriadProRegular.ttf); 
+font-weight:normal;
+font-style:normal;
+}
+ 
+ @font-face {
+font-family: 'MyriadProSemiBold'; 
+src: url(fonts/MyriadProSemiBold.ttf); 
+font-weight:normal;
+font-style:normal;
+}
+ 
+ @font-face {
+font-family: 'Bariol-Regular'; 
+src: url(fonts/Bariol-Regular.ttf); 
+font-weight:normal;
+font-style:normal;
+}
+ 
+div{
+	border: 1px dotted transparent; //можно сделать black, а не transparent
+	display: block;
+}
+
+
+body {
+  line-height: 1;
+  font-family: Bariol-Regular;
+  color: #fefefe;
+  text-align: center;
+}
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+	height: inherit; //наследует высоту от родителя
+	position: relative;
+	text-align: center;
+}
+
+
+
+h1, h2, h3, p {
+  text-align: center;
+  font-family: Bariol-Regular;
+}
+
+/*header*/
+#header_menu{
+	height: 109px;
+	background: #f56262;
+}
+
+#header_menu .menu {
+  position: absolute;
+  top: 40px;
+  right: 260px;
+}
+#header_menu img {
+  margin-top: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 10px;
+  border: 2px solid #f56262;
+  background: #f56262;
+  border-radius: 5px;
+  font: 13px Helvetica;
+}
+
+#header_menu .menu .target {
+  background: #1f1f20;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*slider*/
+#header_slide{
+	height: 640px;
+	background: #eb4f4e;
+}
+
+#header_slide .text {
+	text-align: center;
+	font-size: 16px;
+	padding: 60px 0 30px 0;
+}
+
+#header_slide .text:first-line { /*стиль первой строки, потом остальные добавить*/
+	text-align: center;
+	font-size: 50px;
+	color: #ffffff;
+}
+
+#header_slide .slider {
+margin-top: 5px;
+  height: 344px;
+  position: relative;
+}
+
+#header_slide .slider .img {
+	width: 100px;
+}
+
+
+#header_slide .box img {
+  display: block;
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 0px 7px 30px 2px rgb(0,0,0);
+}
+#header_slide .s-left {
+	z-index: 2;
+  	height: 345px;
+	left: 0px;
+	top: 60px;
+	
+}
+#header_slide .s-center {
+	z-index: 3;
+	width: 619px;
+  	height: 430px;
+	left: 170px;
+	
+}
+#header_slide .s-right {
+	z-index: 1;
+	height: 345px;
+	right: 0px;
+	top: 60px;
+}
+
+
+#header_slide .arrow-left {
+	z-index: 1;
+	width: 40px;
+  	left: 0px;
+	top: 60px;
+}
+
+#header_slide .arrow-right {
+	z-index: 1;
+	width: 40px;
+  	right: 0px;
+	top: 60px;
+}
+
+
+header .nav {
+  z-index: 5;
+  position: absolute;
+  width: 38px;
+  height: 72px;
+  top: 390px;
+  opacity: 0.5;
+  background: url(images/arrow-left) no-repeat;
+}
+
+header .right {
+  right: 10%;
+}
+header .left {
+  left: 10%;
+}
+/*merits*/
+#merits{
+	height: 364px;
+	background: #232324;
+}
+
+#merits h2 { 
+	text-align: center;
+	font-size: 40px;
+	color: #ffffff;
+	margin-top: 40px;
+}
+
+#merits h3 { 
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+
+#merits p {
+	text-align: center;
+	font-size: 18px;
+	padding: 10px 0 30px 0;
+	color: #d84948;
+}
+
+#merits .smart {
+	height: 197px;
+	width: 237px;
+	display: inline-block;
+	overflow: hidden;
+
+}
+/*team*/
+#team{
+	height: 516px;
+	background: #6cc372;
+}
+
+#team h2 { 
+	text-align: center;
+	font-size: 40px;
+	color: #ffffff;
+	margin-top: 40px;
+}
+
+#team p {
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 0px;
+	color: #000000;
+}
+
+
+.avatars {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  bottom: 24px;
+}
+
+.avatars :first-child {
+  float: left;
+  margin-left: initial;
+}
+
+.avatar{
+		height: 342px;
+		width: 228px;
+		display: inline-block;
+		background: #ffffff;
+		border-radius: 10px;	
+		margin: 35px 4px 0;
+		overflow: hidden;
+}
+
+.portrait  {
+	margin-top: 20px;
+	padding-left: 27px;
+	text-align: center;
+}
+
+.avatar .follow-btn {
+	border-radius: 10px;
+	margin-top: 35px;
+	padding-left: 12px;
+}
+
+.avatar h3 { 
+	text-align: center;
+	font-size: 23px;
+	color: #60ae65;
+	margin-top: 40px;
+}
+
+#team .avatar> p {
+	text-align: center;
+	font-size: 15px;
+	margin: 10px 0px;
+	color: #de3528;
+}
+
+/*portfolio*/
+#portfolio{
+	height: 562px;
+	background: #f0f0f0;
+}
+
+#portfolio h2 { 
+	text-align: center;
+	font-size: 40px;
+	color: #616161;
+	margin-top: 40px;
+}
+
+#portfolio p {
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 0px;
+	color: #61af66;
+}
+
+#portfolio .elegant> p {
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 0px;
+	color: #000000;
+}
+
+.elegant{
+		display: inline-block;
+		border-radius: 10px;	
+		margin: 35px 4px 0;
+		overflow: hidden;
+}
+
+
+/*pricing*/
+#pricing{
+	height: 372px;
+	background: #ffffff;
+}
+
+
+.leftblock {
+  position: relative;
+  left: 0;
+  top: -111px;
+}
+
+.leftblock, .centerblock, .rightblock {
+  width: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+.centerblock {
+ position: relative;
+ padding-left: 10px;
+ padding-right:  10px;
+ top: -141px;
+ height: 432px;
+}
+
+.rightblock {
+  position: relative;
+  right: 0;
+  bottom: 10px;
+  top: -111px;
+}
+
+.headerbox {
+  height: 110px;
+  border-radius: 7px 7px 0 0;
+  background: #fff;
+  border: 1px solid;
+  border-color: #e9e9e9 #e9e9e9 #d8d8d8 #e9e9e9;
+}
+.headerbox h2 {
+  font-size: 40px;
+  color: #616161;
+  padding: 15px 0 5px 0;
+}
+
+.headerbox p {
+  font-size: 20px;
+  color: #eb4f4e;
+}
+
+.centerbox div {
+  font-size: 18px;
+  color: #616161;
+  height: 47px;
+  border: 1px solid;
+  border-color: #ffffff #f8f8f8 #d8d8d8 #f5f5f5;
+  background: #f0f0f0;
+  font-family: Bariol-Regular;
+}
+
+.centerbox p {
+  padding: 10px;
+}
+
+
+.footerbox {
+  height: 93px;
+  background: #616161;
+  border-radius: 0 0 7px 7px;
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+
+.footerbox div {
+  display: inline-block;
+}
+
+.dol {
+  font-family: MyriadProSemiBold;
+  font-size: 32px;
+  padding: 0px 0px 35px 7px;
+  overflow: hidden;
+}
+.cost {
+  font-family: MyriadProBold;
+  font-size: 64px;
+  padding: 0px 0px 17px 0px;
+  overflow: hidden;
+}
+
+.month {
+  font-family: MyriadProRegular;
+  font-size: 25px;
+  padding: 0px 5px 30px 0px;
+  overflow: hidden;
+}
+.ord {
+  font-family: Bariol-Regular;
+  font-size: 21px;
+  height: 33px;
+  width: 93px;
+  border-radius: 5px;
+  background: #ffffff;
+  margin: 10px 10px 35px 29px;
+  overflow: hidden;
+}
+.ord a {
+  color: #616161;
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+
+.centerblock .footerbox {
+  background: #eb4f4e;
+}
+
+.centerblock h2 {
+	color: #eb4f4e;
+}
+
+.centerblock .headerbox {
+  height: 140px;
+}
+
+.centerblock .headerbox p {
+  color: #232324;
+  padding: 13px;
+}
+
+
+/*tweets*/
+#tweets{
+	height: 278px;
+	background: #eb4f4e;
+}
+
+#tweets h1 { /*этот текст видно не будет, но если его убрать, то следующий заголовок сместится вправо. Не баг, а фича*/
+	font-size: 12px;
+  color: #eb4f4e;
+  text-align: center;
+}
+
+#tweets h2 {
+	font-size: 40px;
+  color: #ffffff;
+  padding: 15px 0 5px 0;
+  text-align: center;
+}
+
+#tweets p {
+	font-size: 20px;
+  color: #232323;
+  padding: 1px 0 5px 0;
+  font-family: Bariol-Regular;
+}
+
+#dog {
+  font-family: Bariol-Regular;
+  font-size: 21px;
+  font-style: italic;
+  color: #1f1f20;
+  text-align: left;
+  margin: 38px 0 0 0;
+}
+
+span {
+	color: #ffffff;
+}
+/*footer*/
+
+#footer {
+  background: #232324;
+  height: 50px;
+}
+
+
+#footer #copy{
+  height: 48px;
+  background: #1E1E1F;
+}
+
+#footer #copy {
+  float: left;
+  display: block;
+  overflow: hidden;
+  font-family: Bariol-Regular;
+  font-size: 18px;
+  color: #eb4f4e;
+}
+
+#footer .icon {
+  float: right;
+  display: block;
+  overflow: hidden;
+  margin: 9px 0 0 7px;
+}
+
+#contact {
+  height: 149px;
+  width: 617px;
+  background: #1E1E1F;
+  margin: 51px auto;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+#contact h3 {
+	color: #ffffff;
+	font-size: 40px;
+	margin: 15px;
+}
+
+#contact p {
+	color: #eb4f4e;
+	font-size: 25px;
+	margin: 7px;
+}
+
+#map {
+  height: 247px;
+  background: url(images/map.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+@media all and (max-width: 700px){
+	#right{
+		width: 100%;
+		float: none;
+	}
+}
+
+/*Button up*/
+.btn_up{
+  background: #eb4f4e;
+  color: #fff;
+  width: 30px;
+  text-align:center;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+}
