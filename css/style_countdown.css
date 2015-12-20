@@ -129,6 +129,7 @@ h2 {
 }
     
 footer {
+    margin-top: 40px;
     font-size: 11px;
     font-weight: normal;
     text-align: center;
@@ -147,6 +148,35 @@ footer a {
 }
 
 footer a:hover
+ { color: #F535D6;
+  text-decoration: none; 
+}
+
+.spoiler a{
+     font-size: 22px;
+     color: #000000;
+     text-decoration: none;
+}
+ 
+.spoiler:hover {
+     cursor: pointer;
+}
+ 
+.spoiler-text {
+     margin: 15px 25px;
+     font-size: 18px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #99ffff;
+}
+
+.spoiler a {
+    color: #ffcc33;
+}
+
+.spoiler a:hover
  { color: #F535D6;
   text-decoration: none; 
 }
