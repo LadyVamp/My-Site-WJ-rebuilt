@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta charset="utf-8">
+<title>Countdown</title>
+<link rel="stylesheet" media="screen" href="css/normalize.css" />
+<link rel="stylesheet" media="screen" href="css/style_countdown.css" />
+<link href="images/favicon-countdown.ico" rel="icon" type="image/x-icon">
+<script src="js/countdown.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jquery.tooltip.js"></script> <!--for Tooltip-->
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('.spoiler-text').hide()
+		jQuery('.spoiler').click(function(){
+			jQuery(this).toggleClass("folded").toggleClass("unfolded").next().slideToggle()
+		})
+	})
+</script>
+
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="container">
+  	<a href="../index.html"><img src="images/Arrow-Left.png" height="70" title="Назад на главную" alt="title="Назад на главную" "id="arrow"></a>
+  	<br>
+    <h1>Нашествие 2016</h1>
+     <h2>8, 9, 10 июля</h2>
+	    <div id="center_img"><img src="images/nashestvie_logo.png" alt="nashestvie_logo"></div>
+
+	    <br>
+	    <br>
+    <h2>До ГПЛ осталось:</h2>
+    <div id="CDT"></div>
+	    <div class="spoiler-wrapper">
+			<div class="spoiler folded"><a href="javascript:void(0);" title="Нажмите, чтобы развернуть"><h2>Цены на билеты</h2></a></div>
+			<div class="spoiler-text">
+				<div class="price price1 tooltiper">
+				<h3>До 31 декабря 2015</h3>
+					<a href="#" title="Один заход на территорию фестиваля">Входной</a> — 1500 рублей <br> 
+					<a href="#" title="Один заход на территорию фестиваля. Браслет. Следующий заход по »ВХОДНОМУ».">FAN</a> — 3000 рублей <br>
+					<a href="#" title="VIP-зона – это особая территория с улучшенной инфраструктурой и условиями повышенной комфортности.">VIP</a> — 6000 рублей<br>
+					<a href="#" title="Неограниченное кол-во въездов/выездов.">Парковка</a> — 2000 рублей <br>
+					<a href="#" title="Парковка располагается в специально отведенном месте непосредственно рядом с территорией VIP-зоны. Неограниченное количество въездов/выездов.">VIP Парковка</a> — 3100 рублей <br>
+					<a href="#" title="Билет обеспечивает место для палатки в общем палаточном городке.">Палатка</a> — 1900 рублей <br>
+					<a href="#" title="Только при наличии VIP или FAN билета. Билет обеспечивает место для палатки">VIP Палатка</a> — 3400 рублей <br>
+				</div>
+
+				<div class="price price2 tooltiper">
+				<h3>До 1 апреля 2016</h3>
+					<a href="#" title="Один заход на территорию фестиваля">Входной</a> — 1500 рублей <br> 
+					<a href="#" title="Один заход на территорию фестиваля. Браслет. Следующий заход по »ВХОДНОМУ».">FAN</a> — 3500 рублей <br>
+					<a href="#" title="VIP-зона – это особая территория с улучшенной инфраструктурой и условиями повышенной комфортности.">VIP</a> — 7000 рублей <br>
+					<a href="#" title="Неограниченное кол-во въездов/выездов.">Парковка</a> — 2200 рублей <br>
+					<a href="#" title="Парковка располагается в специально отведенном месте непосредственно рядом с территорией VIP-зоны. Неограниченное количество въездов/выездов.">VIP Парковка</a> — 3300 рублей <br>
+					<a href="#" title="Билет обеспечивает место для палатки в общем палаточном городке.">Палатка</a> — 2100 рублей <br>
+					<a href="#" title="Только при наличии VIP или FAN билета. Билет обеспечивает место для палатки">VIP Палатка</a> — 3900 рублей <br>
+				</div>
+			</div>
+		</div>
+    <footer>
+    <span><a href="http://nashestvie.ru/" target="_blank" title="Перейти на nashestvie.ru">Официальный сайт</a></span><br>
+
+      <p>
+        &copy; 2016 Nadezhda Dyakova <br> All rights reserved
+      </p>
+    </footer>
+  </div>
+	<script type="text/javascript">
+		$(function() {
+		$('.tooltiper a').tooltip({
+		track: true,
+		delay: 0,
+		showURL: false,
+		fade: 200
+		});
+		});
+	</script>	
+	</body>
+</html>

@@ -191,3 +191,22 @@ h3 {
 .price2 h3{
     color: #33cc00;
 }
+
+#tooltip {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #1593db;
+    background-color: #e5f5fe;
+    color: #000;
+    padding: 5px;
+    opacity: 0.9;
+    font-size: 12px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.tooltiper a {
+    text-decoration: none;
+    color: #ffff66;
+}
