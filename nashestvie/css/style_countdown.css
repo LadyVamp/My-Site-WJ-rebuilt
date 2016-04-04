@@ -164,7 +164,7 @@ footer a:hover
  
 .spoiler-text {
      margin: 15px 25px;
-     font-size: 18px;
+     font-size: 17px;
      display: inline-block;
 }
 
@@ -183,13 +183,16 @@ h3 {
 }
 
 .price {
-    /*display: inline-block;*/
     float: left;
-    margin: 10px;
+    margin: 6px;
 }
 
 .price2 h3{
     color: #33cc00;
+}
+
+.price3 h3{
+    color: #ff9900;
 }
 
 #tooltip {
@@ -210,3 +213,5 @@ h3 {
     text-decoration: none;
     color: #ffff66;
 }
+
+
