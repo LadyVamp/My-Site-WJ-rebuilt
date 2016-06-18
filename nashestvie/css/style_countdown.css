@@ -195,6 +195,17 @@ h3 {
     color: #ff9900;
 }
 
+.price4 h3{
+    color: #cc0000;
+    margin-top: 30px;
+}
+
+.price4 {
+   width: 100%; 
+   margin: 0 auto;
+   text-align: center;
+}
+
 #tooltip {
     width: 200px;
     position: absolute;
@@ -214,4 +225,8 @@ h3 {
     color: #ffff66;
 }
 
+/*.space {
+    padding-top: 10px;
+}
+*/
 
