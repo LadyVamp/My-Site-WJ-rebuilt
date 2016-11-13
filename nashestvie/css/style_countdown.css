@@ -225,3 +225,14 @@ h3 {
     color: #ffff66;
 }
 
+.price .blue {
+    color: #3498db;
+} 
+
+.price .red {
+    color: #e74c3c;
+} 
+
+.price .green {
+    color: #2ecc71;
+} 
