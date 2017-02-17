@@ -36,7 +36,6 @@ function CDT1(){
  var timer = new CountdownTimer('CDT1',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
  timer.countDown();
 }
-23
 
 function CDT2(){
 
