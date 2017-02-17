@@ -48,7 +48,7 @@ function CDT2(){
 
 function CDT3(){
 
- var tl = new Date('2017/04/1 00:00:00');
+ var tl = new Date('2017/04/23 00:00:00');
 
  var timer = new CountdownTimer('CDT3',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
  timer.countDown();
