@@ -185,6 +185,7 @@ h3 {
 .price {
     float: left;
     margin: 6px;
+    width: 30%;
 }
 
 .price2 h3{
