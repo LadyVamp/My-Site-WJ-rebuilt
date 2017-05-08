@@ -51,14 +51,14 @@
 // }
 
 
-#CDT1, #CDT2, #CDT3, #CDT4 {
+#CDT1, #CDT2, #CDT3, #CDT4, #CDT5, #CDT6 {
     font-size: 50px;
     color: #eee;
     margin: 50px 0 100px;
     font-weight: bold;
 }
 
-#CDT1 .number-wrapper, #CDT2 .number-wrapper, #CDT3 .number-wrapper, #CDT4 .number-wrapper {
+#CDT1 .number-wrapper, #CDT2 .number-wrapper, #CDT3 .number-wrapper, #CDT4 .number-wrapper, #CDT5 .number-wrapper, #CDT6 .number-wrapper {
     margin: 10px;
     -moz-box-shadow: 0 5px 8px #000000;
     -webkit-box-shadow: 0 5px 8px #000000;
@@ -66,7 +66,7 @@
     position: relative;
 }
 
-#CDT1 .number, #CDT2 .number, #CDT3 .number, #CDT4 .number {
+#CDT1 .number, #CDT2 .number, #CDT3 .number, #CDT4 .number, #CDT5 .number, #CDT6 .number {
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -107,7 +107,7 @@
     text-shadow: 0 3px 3px #000000;
 }
        
-#CDT1 .line, #CDT2 .line, #CDT3 .line, #CDT4 .line {
+#CDT1 .line, #CDT2 .line, #CDT3 .line, #CDT4 .line, #CDT5 .line, #CDT6 .line {
     position: absolute;
     width: 100%;
     height: 1px;
