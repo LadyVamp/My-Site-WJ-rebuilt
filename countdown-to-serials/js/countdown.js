@@ -69,11 +69,20 @@ function CDT5(){
  timer.countDown();
 }
 
+function CDT6(){
+
+ var tl = new Date('2017/10/20 00:00:00');
+
+ var timer = new CountdownTimer('CDT6',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
+ timer.countDown();
+}
+
 
 window.onload=function(){
  CDT1();
  CDT2();
  CDT3();
  CDT4(); 
- CDT5(); 
+ CDT5();  
+ CDT6(); 
 }
